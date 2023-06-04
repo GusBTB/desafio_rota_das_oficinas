@@ -34,6 +34,7 @@ const GameOfLife = () => {
   const [grid, setGrid] = useState(() => {
     return generateEmptyGrid();
   });
+  const [columns, setColumns] = useState<number>(0)
 
   const [running, setRunning] = useState(false);
 
@@ -145,6 +146,7 @@ const GameOfLife = () => {
                   gridCopy[i][k] = grid[i][k] ? 0 : 1;
                 });
                 setGrid(newGrid);
+                setColumns(cols + columns)
               }}
               style={{
                 width: 20,
