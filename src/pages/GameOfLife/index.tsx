@@ -137,7 +137,7 @@ const GameOfLife = () => {
         }}
       >
         {grid.map((rows, i) =>
-          rows.map((col, k) => (
+          rows.map((k) => (
             <div
               key={`${i}-${k}`}
               onClick={() => {

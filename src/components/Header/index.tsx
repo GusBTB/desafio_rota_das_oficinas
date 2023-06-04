@@ -2,7 +2,6 @@ import {
   HeaderCenter,
   HeaderContainer,
   ImgLogo,
-  LogoTitle,
   PageDiv,
   PageTitle,
   PagesDiv,
